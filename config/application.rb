@@ -18,7 +18,7 @@ module GqlTest
     # -- all .rb files in that directory are automatically loaded after loading
     # the framework and any gems in your application.
   end
-  AUTH_HEADER = "Bearer 57f4e44a74ea5179aa87984bf420c1e8c6096c51"
+  AUTH_HEADER = "Bearer [your access token]"
   HTTP = GraphQL::Client::HTTP.new("https://api.github.com/graphql") do 
     def headers(context)
       { "Authorization": AUTH_HEADER }
